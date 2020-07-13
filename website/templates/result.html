@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<h1>Classification Result</h1>	
+		</div>
+	</header>
+	<br/>
+	<br/>
+	<div class="wrapper">
+		{% if prediction == "Công Nghệ"%}
+		<h2 style="color:#800000;">Công Nghệ</h2>
+		{% elif prediction == "Giáo Dục"%} 
+		<h2 style="color:#800000;">Giáo Dục</h2>
+		{% elif prediction == "Sức Khỏe"%} 
+		<h2 style="color:#800000;">Sức Khỏe</h2>
+		{% elif prediction == "Thể Thao"%} 
+		<h2 style="color:#800000;">Thể Thao</h2>
+		{% elif prediction == "Âm Nhạc"%} 
+		<h2 style="color:#800000;">Âm Nhạc</h2>
+		{% elif prediction == None%} 
+		<h2 style="color:#800000;">No Result</h2>
+		{% endif %}
+		<br/>
+		<br/>
+		<button type="button" onclick="history.back()"><a>Back</a></button>
+	</div>
+</body>
+</html>

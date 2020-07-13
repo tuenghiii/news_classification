@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<h1>Enter Your News Here:</h1>
+		</div>
+	</header>
+
+	<div class="wrapper">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<textarea name="news" rows="30" cols="100"></textarea>
+		<br/>
+		<br/>
+		<button class="button" value="predict"><a>Predict</a></button>
+		</form>
+		
+	</div>
+
+</body>
+</html>
